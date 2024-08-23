@@ -7,7 +7,7 @@ function App() {
 return (
     <>
       <div className={style.headerLogInSection} style={{
-      backgroundImage: `url(${netflixBackGround} `, 'rgba(40, 38, 38, 0.9)'
+      backgroundImage: `url(${netflixBackGround} `, 
       height:'900px', 
       width:'100%', 
       backgroundRepeat:'no-repeat',

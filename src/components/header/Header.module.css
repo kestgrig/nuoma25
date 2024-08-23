@@ -12,12 +12,12 @@
     height: auto;
 }
 
-.language-select {
+.languageSelect {
     display: flex;
     align-items: center;
 }
 
-.language-select select {
+.languageSelect select {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #fff;
     color: #fff;

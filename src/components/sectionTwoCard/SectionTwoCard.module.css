@@ -1,0 +1,18 @@
+.sectionTwoCards {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .cardImage {
+   
+      height: 240px;
+    }
+    .cardImage:hover {
+        height: 270px;
+      }
+
+ 

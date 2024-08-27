@@ -1,0 +1,38 @@
+
+.sectionTwoTrending {  
+    color: white;  
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .trendingBoxContainer {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;  
+      margin-left: 160px;  
+    }
+    
+    .trendingBox {
+      border: 1px solid white;
+      border-radius: 7px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+    .trendingBox > span {
+      margin-left: 15px;
+    }
+    .trendingBox:hover {
+        background-color: rgba(255, 255, 255, 0.325);
+    }
+    .container{
+       
+        height: 100px;
+ 
+        gap: 1.5rem;
+        padding: 3rem 8rem;
+        border-top: 5px solid red;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+
+    }

@@ -1,17 +1,17 @@
-  
+ 
 
 import { useState } from 'react';
 import style from './Footer.module.css'; 
 
-const Footer = () => {
+export function Footer () {
   const [language, setLanguage] = useState('English');
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const toggleDropdown = () => {
+  function toggleDropdown () {
     setShowDropdown(!showDropdown);
   };
 
-  const selectLanguage = (lang) => {
+  function selectLanguage (lang) {
     setLanguage(lang);
     setShowDropdown(false); 
   };
@@ -22,7 +22,7 @@ const Footer = () => {
       <div className={style.footerTop}>
         <p>Ready to watch? Enter your email to create or restart your membership.</p>
         <div className={style.emailForm}>
-          <input type="email" placeholder="Enter your email address" className={style.emailInput} />
+          <input type="email" placeholder="Email address" className={style.emailInput} />
           <button className={style.getStartedButton}>Get Started</button>
         </div>
         <p className={style.footerContact}>Questions? Contact us.</p>

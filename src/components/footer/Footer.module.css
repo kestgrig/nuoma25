@@ -1,5 +1,5 @@
 .footer {
-  width: 100%; 
+  width: 90%; 
   padding: 20px;
   background-color: #141414;
   color: #757575;
@@ -9,30 +9,41 @@
 }
 
 .footerTop {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: start;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 155px;
+  color: #fff;
 }
 
 .emailForm {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   margin: 10px 0;
   padding: 0;
+  
 }
 
 .emailInput {
-  padding: 10px;
   border: none;
   border-radius: 5px;
   margin-right: 10px;
   flex: 1;
   min-width: 300px;
   max-width: 600px;
+  background-color: rgba(40, 38, 38, 0.9);
+  padding: 20px;
+  font-size: 16px;
+  border: rgba(128, 128, 128, 0.511) solid 1px;
+  max-width: 750px;
+  width: 100%;
+  color: white;
+  border-radius: 5px;
 }
 
 .getStartedButton {
-  font-size: 20px;
+  font-size: 24px;
   padding: 10px 20px;
   background-color: #e50914;
   color: white;
@@ -40,24 +51,28 @@
   border-radius: 5px;
   cursor: pointer;
   height: 60px;
+  width: 240px;
   white-space: nowrap;
 }
+
 .getStartedButton:hover {
   background-color: #f40612b2;
 }
 
 .footerContact {
   margin-top: 20px;
+  margin-left: 30px;
   text-decoration: underline;
   cursor: pointer;
+  color:#ffffffb3;
 }
 
 .footerLinks {
   display: grid;
-  padding-left: 20px;
+  margin-left: 185px;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footerList {
@@ -67,8 +82,8 @@
 }
 
 .footerList a {
-  color: #757575;
-  text-decoration: none;
+  color: #ffffffb3;
+  text-decoration: underline;
   display: block;
   margin-bottom: 10px;
 }
@@ -78,8 +93,9 @@
 }
 
 .footerBottom {
-  text-align: center;
-  margin-top: 20px;
+  text-align: start;
+  margin-top: 40px;
+  margin-left: 180px;
 }
 
 
@@ -91,7 +107,7 @@
 
 
 .dropdownItem {
-  background: none;
+  background: transparent;
   border: none;
   color: #fff;
   padding: 10px;
@@ -102,7 +118,12 @@
   background-color: #2e8bc0;
 }
 
-/* Responsive Design */
+.country {
+  color: #ffffffb3;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
 @media (max-width: 1200px) {
   .footerLinks {
     grid-template-columns: repeat(3, 1fr);

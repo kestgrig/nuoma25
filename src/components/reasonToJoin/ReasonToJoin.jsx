@@ -9,7 +9,7 @@ import kidsIcon from '/img/kids.png';
 export function ReasonsToJoin () {
     return (
         <div className={style.container}>
-            <h2>More Reasons to Join</h2>
+            <h2 className={style.reasons}>More Reasons to Join</h2>
             <div className={style.row}>
                 <div className={style.card}>
                     <h3>Enjoy on your TV</h3>

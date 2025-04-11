@@ -1,80 +1,92 @@
+.wrapper {
+    padding: 20px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+.carList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.reasons {
-    justify-content: flex-start;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #ffffff;
+.carItem {
+    width: calc(33.333% - 20px);
+    background: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    background: linear-gradient(145deg, #182044, #210e17);
-    min-width: 250px;
-    padding: 20px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    position: relative;
+.imageLink img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.card > h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
+.info {
+    padding: 10px;
 }
 
-.card > p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 60px;
+.title {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    text-decoration: none;
 }
 
-.img {
-    justify-self: end;
-    align-self: end;
-    margin-top: 20px;
-    width: 60px;
-    height: 60px;
+.iconList {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    margin: 8px 0;
+    padding: 0;
+    list-style: none;
 }
 
-@media (max-width: 1200px) {
-    .row {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.iconGear::before {
+    content: "⚙️ ";
 }
-@media (max-width: 900px) {
-    .row {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
+.iconSeats::before {
+    content: "🪑 ";
 }
-@media (max-width: 600px) {
-    .row {
-        grid-template-columns: 1fr;
-    }
+
+.iconFuel::before {
+    content: "⛽ ";
 }
-@media (max-width: 300px) {
-    .card {
-        padding: 10px;
-    }
-    .img {
-        width: 40px;
-        height: 40px;
-    }
-    .card > h3 {
-        font-size: 14px;
-    }
-    .card > p {
-        font-size: 10px;
-        margin-bottom: 40px;
-    }
+
+.iconBody::before {
+    content: "🚗 ";
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1em;
+    color: #e53935;
+}
+
+.clear {
+    clear: both;
+}
+
+.detailsLink {
+    display: block;
+    text-align: center;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.detailsLink:hover {
+    background: #0056b3;
 }

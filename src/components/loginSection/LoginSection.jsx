@@ -13,21 +13,25 @@ export function LoginSection () {
             <img className={style.logo} src={logo} alt="Logo" />
           </div>
           <nav className={style.btnSelect}>
+            <ul id="nav" >
+              <li className={style.nuoma}>
+                <a href="ilgalaike-automobiliu-nuoma">Automobilių nuoma</a>
+                <a href="ilgalaike-automobiliu-nuoma">Technikos nuoma</a>
+                <a href="veiklos-nuoma">Įrankių nuoma</a>
+                <a href="apie-mus">Apie mus</a>
+                <a href="kontaktai">Kontaktai</a>
+              </li>
+            </ul>
             <select className={style.languageSelect}>
-              <option value="english">English</option>
-              <option value="lithuanian">Lietuvių</option>
+              <option value="english">LT</option>
+              <option value="lithuanian">ENG</option>
             </select>
-            <button className={style.signInBtn}>Sign In</button>
           </nav>
         </header>
         <section className={style.content}>
-          <h1 className={style.unlimited}>Unlimited movies,<br/> TV  shows, and more</h1>
-          <h2 className={style.price}>Starts at EUR 7.99. Cancel anytime.</h2>
-          <p className={style.enterEmail}>Ready to watch? Enter your email to create or restart your membership.</p>
-          <div className={style.emailForm}>
-            <input type="email" placeholder="Email address" className={style.emailInput}/>
-            <button className={style.getStartedButton}>Get Started</button>
-          </div>
+          <h1 className={style.unlimited}>Automobilių, technikos, įrankių nuoma Kaune<br/> </h1>
+          <h2 className={style.price}></h2>
+
         </section>
         </div>
     </>

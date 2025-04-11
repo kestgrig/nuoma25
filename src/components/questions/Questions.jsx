@@ -81,10 +81,10 @@ export function Questions(props) {
 
     return (
        <>
-        <h2 className={style.askedQuestions}>Frequently Asked Questions</h2>
+        <h2 className={style.askedQuestions}></h2>
         <section className={style.container}>
             <div className={style.questionContainer}>
-                <button onClick={() => hide0()} className={style.question}>What is Netflix?
+                <button onClick={() => hide0()} className={style.question}>
                     <img style={show0 === true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
                     <img style={show0 === false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
                 </button>
@@ -92,11 +92,11 @@ export function Questions(props) {
             </div>
 
             <div className={style.questionContainer}>
-                <button onClick={() => hide1()} className={style.question}>How much does Netflix cost?
+                <button onClick={() => hide1()} className={style.question}>
                     <img style={show1 === true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
                     <img style={show1 === false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
                 </button>
-                <p style={show1 === true ?  {display: "flex"}: {display: "none"} } className={style.answer}>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EUR 7.99 to EUR 11.99 a month. No extra costs, no contracts.</p>
+                <p style={show1 === true ?  {display: "flex"}: {display: "none"} } className={style.answer}></p>
             </div>
 
             <div className={style.questionContainer}>

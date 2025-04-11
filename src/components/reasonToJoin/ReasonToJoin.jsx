@@ -1,39 +1,149 @@
- 
-import style from './ReasonToJoin.module.css'
-import tvIcon from '/img/tv.png';
-import downloadIcon from '/img/download.png';
-import watchIcon from '/img/watch.png';
-import kidsIcon from '/img/kids.png';
+import styles from './ReasonToJoin.module.css';
+
+const cars = [
+  {
+    id: 1,
+    title: "Škoda Kamiq",
+    img: "/img/1auto.png",
+    link: "/nuomojamas-automobilis/482--automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "6l/100km",
+    body: "Visureigis",
+    price: "30.00 €"
+  },
+  {
+    id: 2,
+    title: "VW T-Cross",
+    img: "/img/2auto.png",
+    link: "/nuomojamas-automobilis/419-vw-t-cross-automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "6l/100km",
+    body: "Visureigis",
+    price: "36.00 €"
+  },
+  {
+    id: 3,
+    title: "Mercedes-Benz Sprinter",
+    img: "/img/3auto.png",
+    link: "/nuomojamas-komercinis/338-mercedes-benz-sprinter-automobilio-nuoma",
+    gear: "Mechaninė",
+    seats: 3,
+    fuel: "12ltr/100km",
+    body: "Komercinis",
+    price: "38.00 €"
+  },
+  {
+    id: 4,
+    title: "BMW X5",
+    img: "/img/4auto.jpg",
+    link: "/nuomojamas-automobilis/123-bmw-x5-automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "8l/100km",
+    body: "Visureigis",
+    price: "50.00 €"
+  },
+  {
+    id: 5,
+    title: "Audi A3",
+    img: "/img/5auto.jpg",
+    link: "/nuomojamas-automobilis/125-audi-a3-automobilio-nuoma",
+    gear: "Mechaninė",
+    seats: 5,
+    fuel: "7l/100km",
+    body: "Sedanas",
+    price: "40.00 €"
+  },
+  {
+    id: 6,
+    title: "Ford Fiesta",
+    img: "/img/6auto.jpg",
+    link: "/nuomojamas-automobilis/126-ford-fiesta-automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "6l/100km",
+    body: "Hatchback",
+    price: "28.00 €"
+  },
+  {
+    id: 7,
+    title: "Peugeot 3008",
+    img: "/img/7auto.jpg",
+    link: "/nuomojamas-automobilis/127-peugeot-3008-automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "6l/100km",
+    body: "Visureigis",
+    price: "45.00 €"
+  },
+  {
+    id: 8,
+    title: "Volkswagen Golf",
+    img: "/img/8auto.jpg",
+    link: "/nuomojamas-automobilis/128-volkswagen-golf-automobilio-nuoma",
+    gear: "Mechaninė",
+    seats: 5,
+    fuel: "5l/100km",
+    body: "Sedanas",
+    price: "35.00 €"
+  },
+  {
+    id: 9,
+    title: "Renault Clio",
+    img: "/img/9auto.jpg",
+    link: "/nuomojamas-automobilis/129-renault-clio-automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "6l/100km",
+    body: "Hatchback",
+    price: "30.00 €"
+  },
+  {
+    id: 10,
+    title: "Tesla Model 3",
+    img: "/img/10auto.jpg",
+    link: "/nuomojamas-automobilis/130-tesla-model-3-automobilio-nuoma",
+    gear: "Automatinė",
+    seats: 5,
+    fuel: "0l/100km",
+    body: "Sedanas",
+    price: "120.00 €"
+  }
+];
 
 
-export function ReasonsToJoin () {
-    return (
-        <div className={style.container}>
-            <h2 className={style.reasons}>More Reasons to Join</h2>
-            <div className={style.row}>
-                <div className={style.card}>
-                    <h3>Enjoy on your TV</h3>
-                    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-                    <img className={style.img} src={tvIcon} alt="tv" />
+export function ReasonsToJoin() {
+  return (
+    <div id="found" className={styles.wrapper}>
+      <div className={styles.container}>
+        <ul className={styles.carList}>
+          {cars.map((car) => (
+            <li key={car.id} className={styles.carItem}>
+              <div>
+                <a className={styles.imgLink} href={car.link}>
+                  <img alt={`${car.title} nuoma`} src={car.img} />
+                </a>
+                <div className={styles.info}>
+                  <a className={styles.title} href={car.link}>{car.title}</a>
+                  <ul className={styles.iconList}>
+                    <li className={styles.iconGear}>{car.gear}</li>
+                    <li className={styles.iconSeats}>{car.seats}</li>
+                    <li className={styles.iconFuel}>{car.fuel}</li>
+                    <li className={styles.iconBody}>{car.body}</li>
+                  </ul>
+                  <span className={styles.price}>
+                    <span>para nuo</span> {car.price}
+                  </span>
+                  <div className={styles.clear}></div>
                 </div>
-                <div className={style.card}>
-                    <h3>Download your shows to watch offline</h3>
-                    <p>Save your favorites easily and always have something to watch.</p>
-                    <img className={style.img} src={downloadIcon} alt="download" />
-                    
-                </div>
-                <div className={style.card}>
-                    <h3>Watch everywhere</h3>
-                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-                    <img className={style.img} src={watchIcon} alt="watch" />
-                </div>
-                <div className={style.card}>
-                    <h3>Create profiles for kids</h3>
-                    <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
-                    <img className={style.img} src={kidsIcon} alt="kids" />
-                </div>
-            </div>
-        </div>
-    )
+                <a className={styles.detailsLink} href={car.link}>Žiūrėti daugiau</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }
-export default ReasonsToJoin;

@@ -13,9 +13,7 @@ function App() {
     <>
       <LoginSection />
       <SectionTwoTrend />
-      <SectionTwoCard />
       <ReasonsToJoin />
-      <Questions />
       <Footer />
     </>
   );

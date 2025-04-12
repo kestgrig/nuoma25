@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/kestgrig/nuoma25/'
+  base: 'https://github.com/kestgrig/nuoma25'
 })

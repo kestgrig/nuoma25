@@ -1,10 +1,10 @@
 import style from './SectionTwoCard.module.css';
 
-import sectionTwoImage1 from '/img/1.png';
-import sectionTwoImage2 from '/img/2.png';
-import sectionTwoImage3 from '/img/3.png';
-import sectionTwoImage4 from '/img/4.png';
-import sectionTwoImage5 from '/img/5.png';
+import sectionTwoImage1 from '/src/img/1.png';
+import sectionTwoImage2 from '/src/img/2.png';
+import sectionTwoImage3 from '/src/img/3.png';
+import sectionTwoImage4 from '/src/img/4.png';
+import sectionTwoImage5 from '/src/img/5.png';
 
 export function SectionTwoCard() {
     return (

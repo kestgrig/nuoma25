@@ -4,7 +4,7 @@ const cars = [
   {
     id: 1,
     title: "Škoda Kamiq",
-    img: "/img/1auto.png",
+    img: "./src/img/1auto.png",
     link: "/nuomojamas-automobilis/482--automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -15,7 +15,7 @@ const cars = [
   {
     id: 2,
     title: "VW T-Cross",
-    img: "/img/2auto.png",
+    img: "./src/img/2auto.png",
     link: "/nuomojamas-automobilis/419-vw-t-cross-automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -26,7 +26,7 @@ const cars = [
   {
     id: 3,
     title: "Mercedes-Benz Sprinter",
-    img: "/img/3auto.png",
+    img: "./src/img/3auto.png",
     link: "/nuomojamas-komercinis/338-mercedes-benz-sprinter-automobilio-nuoma",
     gear: "Mechaninė",
     seats: 3,
@@ -37,7 +37,7 @@ const cars = [
   {
     id: 4,
     title: "BMW X5",
-    img: "/img/4auto.jpg",
+    img: "./src/img/4auto.jpg",
     link: "/nuomojamas-automobilis/123-bmw-x5-automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -48,7 +48,7 @@ const cars = [
   {
     id: 5,
     title: "Audi A3",
-    img: "/img/5auto.jpg",
+    img: "./src/img/5auto.jpg",
     link: "/nuomojamas-automobilis/125-audi-a3-automobilio-nuoma",
     gear: "Mechaninė",
     seats: 5,
@@ -59,7 +59,7 @@ const cars = [
   {
     id: 6,
     title: "Ford Fiesta",
-    img: "/img/6auto.jpg",
+    img: "./src/img/6auto.jpg",
     link: "/nuomojamas-automobilis/126-ford-fiesta-automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -70,7 +70,7 @@ const cars = [
   {
     id: 7,
     title: "Peugeot 3008",
-    img: "/img/7auto.jpg",
+    img: "./src/img/7auto.jpg",
     link: "/nuomojamas-automobilis/127-peugeot-3008-automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -81,7 +81,7 @@ const cars = [
   {
     id: 8,
     title: "Volkswagen Golf",
-    img: "/img/8auto.jpg",
+    img: "./src/img/8auto.jpg",
     link: "/nuomojamas-automobilis/128-volkswagen-golf-automobilio-nuoma",
     gear: "Mechaninė",
     seats: 5,
@@ -92,7 +92,7 @@ const cars = [
   {
     id: 9,
     title: "Renault Clio",
-    img: "/img/9auto.jpg",
+    img: "./src/img/9auto.jpg",
     link: "/nuomojamas-automobilis/129-renault-clio-automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -103,7 +103,7 @@ const cars = [
   {
     id: 10,
     title: "Tesla Model 3",
-    img: "/img/10auto.jpg",
+    img: "./src/img/10auto.jpg",
     link: "/nuomojamas-automobilis/130-tesla-model-3-automobilio-nuoma",
     gear: "Automatinė",
     seats: 5,
@@ -138,7 +138,7 @@ export function ReasonsToJoin() {
                   </span>
                   <div className={styles.clear}></div>
                 </div>
-                <a className={styles.detailsLink} href={car.link}>Žiūrėti daugiau</a>
+                <a className={styles.detailsLink} href={car.link}></a>
               </div>
             </li>
           ))}

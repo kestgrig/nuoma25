@@ -1,6 +1,6 @@
   
 import style from '../loginSection/LoginSection.module.css'
-import logo from '/img/netflix-logo.png';
+import logo from '/src/img/netflix-logo.png';
 
 
 export function LoginSection () {

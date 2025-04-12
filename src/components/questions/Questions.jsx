@@ -2,8 +2,8 @@
 import { useState } from 'react';
 
 import style from './Questions.module.css';
-import plus from '/img/plus.png';
-import x from '/img/x.png';
+import plus from '/src/img/plus.png';
+import x from '/src/img/x.png';
 
 
 export function Questions(props) {
